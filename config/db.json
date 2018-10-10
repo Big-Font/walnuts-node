@@ -1,0 +1,22 @@
+{
+    "development": {
+        "dialect": "sqlite",
+        "storage": "./db.development.sqlite"
+    },
+    "test": {
+        "username": "root",
+        "password": "SHEN396689144@",
+        "database": "nemblog",
+        "host": "47.95.223.216",
+        "dialect": "mysql",
+        "logging": false
+    },
+    "production": {
+        "username": "root",
+        "password": "SHEN396689144@",
+        "database": "nemblog",
+        "host": "47.95.223.216",
+        "dialect": "mysql",
+        "logging": false
+    }
+}

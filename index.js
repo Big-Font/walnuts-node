@@ -8,8 +8,10 @@ var app = express();
 environment(app);
 routers(app);
 
-models.sequlize.sync.then( function() {
-    var server = app.listen(app.get('port'), function() {
-        console.log('listen on port' + server.address().port);
-    });
-});
+// models.sequelize.sync().then(function(){
+// 	var server = app.listen(app.get('port'),function(){
+// 		console.log('listening on port ' + server.address().port);
+// 	});
+// });
+
+module.exports = app;
