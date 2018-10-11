@@ -9,7 +9,8 @@
         "database": "nemblog",
         "host": "47.95.223.216",
         "dialect": "mysql",
-        "logging": false
+        "logging": false,
+        "operatorsAliases":false
     },
     "production": {
         "username": "root",
@@ -17,6 +18,7 @@
         "database": "nemblog",
         "host": "47.95.223.216",
         "dialect": "mysql",
-        "logging": false
+        "logging": false,
+        "operatorsAliases":false
     }
 }

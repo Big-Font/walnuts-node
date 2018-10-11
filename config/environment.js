@@ -7,8 +7,8 @@ var logger = require('morgan');
 var settings = require('./settings');
 
 module.exports = function(app) {
-    app.set('port', settings.port);
-    app.set('views', path.join(__dirname, 'views'));
+    // app.set('port', settings.port);
+    app.set('views', path.join(__dirname, '../views'));
     app.set('view engine', 'ejs');
 
     app.use(bodyParser.json()); // for parsing application/json
@@ -26,6 +26,6 @@ module.exports = function(app) {
     app.use(cookieParser('my name is jason wang'));
 
     //  static dir
-    app.use(express.static(path.join(__dirname, 'public')));
+    app.use(express.static(path.join(__dirname, '../public')));
 
 }
