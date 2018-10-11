@@ -24,6 +24,19 @@ var db        = {};
 //   }
 // });
 
+var Admins = sequelize.define('admins', {
+  name: Sequelize.STRING,
+  password: Sequelize.STRING
+})
+
+Admins.findAll({
+  where: {
+    name: 'root'
+  }
+}).then(function(data) {
+  console.log(data[0])
+})
+
 
 sequelize.authenticate().then( function() {
   console.log('mysql数据库连接成功');

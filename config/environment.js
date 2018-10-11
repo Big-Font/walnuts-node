@@ -15,8 +15,8 @@ module.exports = function(app) {
 	app.use(bodyParser.urlencoded({ extended: true })); // for parsing application/x-www-form-urlencoded
 
     app.use(logger('dev'));
-    app.use(express.json());
-    app.use(express.urlencoded({ extended: false }));
+    // app.use(express.json());
+    // app.use(express.urlencoded({ extended: false }));
 
     app.use(session({
         resave: false,
