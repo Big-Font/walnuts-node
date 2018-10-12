@@ -163,3 +163,8 @@ post.newPost('post title', 'post content').then(function() {
 });
 
 ```
+
+## pm2 pm2.io
+1. 软件监控器： pm2 monit  
+2. 根据配置文件启动集群: pm2 start ecosystem.config.js --env product -i max  
+3. 生成配置文件: pm2 init  
